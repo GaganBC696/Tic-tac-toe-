@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f39c12, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.prompt {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e74c3c;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.emoji {
+  font-size: 28px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(120deg, #ecf0f1, #dfe6e9);
+  color: #2c3e50;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background-color: #bdc3c7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#restart {
+  background-color: #27ae60;
+}
+
+#restart:hover {
+  background-color: #219150;
+}
+
+#reset {
+  background-color: #e74c3c;
+}
+
+#reset:hover {
+  background-color: #c0392b;
+}
